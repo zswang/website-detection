@@ -71,7 +71,7 @@
       global: 'badgeSign',
     },
     {
-      pattern: /dn-growing\.qbox\.me\/vds-gate\.js/,
+      pattern: /dn-growing\.qbox\.me\/vds-gate\.js|dn-growing\.qbox\.me\/vds\.js/,
       name: 'growingio',
       title: 'GrowingIO',
       global: 'grcs',
