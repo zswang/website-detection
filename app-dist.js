@@ -53,6 +53,6 @@ IO(wsPort, {
 })
 
 app.listen(port)
-console.log('^linenum http server listen: %j', port)
+console.log('app.js:56 http server listen: %j', port)
 
-console.log('^linenum websocket server listen: %j', wsPort)
+console.log('app.js:58 websocket server listen: %j', wsPort)
