@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "script": "app-dist.js",
+      "name": "website-detection",
+      "args": ["4000", "4010"],
+      "merge_logs": true,
+      "log_date_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  ]
+}

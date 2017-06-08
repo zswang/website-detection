@@ -1,0 +1,30 @@
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logs li:nth-child(2n) {
+  background: #ddd;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+
+.features li {
+  float: left;
+  width: 200px;
+  margin: 6px;
+  height: 150px;
+  text-align: center;
+  border: gray solid 1px;
+}
+
+.features li img {
+  width: 170px;
+  height: 70px;
+}
+.clear {
+  clear: both;
+}

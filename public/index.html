@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-lang-content="<!--{en}Website detection-->">网站检测</title>
+  <script src="//unpkg.com/penjs/penjs.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script>
+    window.ws = {
+      host: '//:3010',
+      path: '/ws/detection',
+    };
+  </script>
+</head>
+<body>
+  <div>
+    <div class="form">
+      <script type="text/jhtmls">
+      var info = { url: url };
+      if (loading) {
+        <label>#{url} 检测中...<!--{en}In detection...--></label>
+      } else {
+        <input type="text" placeholder="网址" data-lang-placeholder="<!--{en}URL-->" :value="url" @input="info.url = this.value;">
+        <button @click="detection(info.url)">检测<!--{en}Detection--></button>
+      }
+      <ul class="features" :bind="features">
+        features.forEach(function (feature) {
+          <li>
+            <h4>#{feature.title}</h4>
+            <img :src="'img/' + feature.name + '.png'" :alt="feature.name">
+          </li>
+        })
+      </ul>
+      <div class="clear"></div>
+      <ul class="logs" :bind="logs">
+        logs.forEach(function (log) {
+          <li>#{log.type} -- #{log.message}</li>
+        });
+      </ul>
+      </script>
+    </div>
+  </div>
+</body>
+<script src="js/socket.io.js"></script>
+<script src="js/main.js"></script>
+</html>
