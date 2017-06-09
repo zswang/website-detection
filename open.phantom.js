@@ -6,6 +6,8 @@ var page = webPage.create();
 
 (function () {
 
+  page.settings.userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36";
+
   var timer;
   function runTimeout() {
     if (timer) {

@@ -19,14 +19,14 @@
       if (loading) {
         <label>#{url} 检测中...<!--{en}In detection...--></label>
       } else {
-        <input type="text" placeholder="网址" data-lang-placeholder="<!--{en}URL-->" :value="url" @input="info.url = this.value;">
+        <input type="text" placeholder="网址" data-lang-placeholder="<!--{en}URL-->" :value="url" @input="info.url = this.value;" @keyup.enter="detection(info.url)">
         <button @click="detection(info.url)">检测<!--{en}Detection--></button>
       }
       <ul class="features" :bind="features">
         features.forEach(function (feature) {
           <li>
             <h4>#{feature.title}</h4>
-            <img :src="'img/' + feature.name + '.png'" :alt="feature.name">
+            <a :href="feature.home" target="_blank"><img :src="'img/' + feature.name + '.png'" :alt="feature.name"></a>
           </li>
         })
       </ul>
