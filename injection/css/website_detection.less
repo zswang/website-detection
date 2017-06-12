@@ -1,0 +1,79 @@
+#website_detection {
+  position: fixed;
+  width: 440px;
+  border: gray solid 1px;
+  border-radius: 3px;
+  background: white;
+
+  left: 100px;
+  top: 30px;
+  z-index: 2012122324;
+
+  ul, li, button, a, p, input, select, textarea, label, h4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 18px/1.125 Arial, Helvetica, sans-serif;
+  }
+
+  h4 {
+    padding: 4px 0;
+  }
+
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .panel_header {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    background: #24292e;
+    color: #fff;
+    padding: 2px 5px;
+    user-select: none;
+    cursor: move;
+
+    .image_logo {
+      float: left;
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .label_title {
+      float: left;
+      margin-left: 5px;
+    }
+
+    .btn_close {
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  .panel_content {
+    background: white;
+    padding: 5px;
+
+    .features li {
+      float: left;
+      width: 200px;
+      margin: 6px;
+      height: 150px;
+      text-align: center;
+      border: gray solid 1px;
+    }
+
+    .features li img {
+      width: 170px;
+      height: 70px;
+    }
+
+  }
+  .clear {
+    clear: both;
+  }
+}
