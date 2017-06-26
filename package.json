@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node app.js",
-    "dist": "linenum app.js --output app-dist.js",
+    "dist": "linenum app.js --output app-dist.js && jdists public/index.jdists.html > public/index.html",
     "postinstall": "ln -f node_modules/socket.io-client/dist/socket.io.js public/js/socket.io.js && ln -f node_modules/socket.io-client/dist/socket.io.js.map public/js/socket.io.js.map"
   },
   "repository": {
