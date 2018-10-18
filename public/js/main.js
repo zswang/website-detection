@@ -70,11 +70,18 @@
       home: 'http://tongji.baidu.com/',
     },
     {
-      pattern: /www\.sensorsdata\.cn\/sdk\/sensorsdata\.www\.js|sensorsdata\.min\.js/,
+      pattern: /www\.sensorsdata\.cn\/sdk\/sensorsdata\.www\.js|sensorsdata\.min\.js|sa\.gif.*&project=/,
       name: 'sensorsdata',
       title: '神策数据',
       global: 'sensorsDataAnalytic201505',
       home: 'http://sensorsdata.cn/',
+    },
+    {
+      pattern: /\blsd\.js\b|\b_lsd\.gif.*app=/,
+      name: "lotuseed",
+      title: "莲子手游运营分析",
+      global: "Lsd",
+      home: "http://game.lotuseed.com"
     },
     {
       pattern: /js\.ptengine\.cn\/\w+\.js/,
