@@ -39,7 +39,7 @@
     {
       pattern: null,
       name: "sensorsdata",
-      title: "神策数据(App JS)",
+      title: "神策数据(App)",
       global: "sensorsdata_app_js_bridge_call_js",
       home: "http://sensorsdata.cn/"
     },
